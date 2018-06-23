@@ -17,3 +17,9 @@ it("should interpolate query with `name` and `age`", async () => {
   const status = await compiler(sourceFileName, "?name=foo&age=1");
   expect(status.toJson().modules[0].source).toMatch(/foo-1/);
 });
+
+it("should interpolate with non-default parentheses", async () => {
+  const sourceFileName = "./fixtures/non-default-parentheses.js";
+  const status = await compiler(sourceFileName, "?placeholder=1234", { prefix: "/*%", postfix: "%*/" });
+  expect(status.toJson().modules[0].source).toMatch(/1234/);
+});
