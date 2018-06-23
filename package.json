@@ -1,0 +1,21 @@
+{
+  "name": "interpolate-by-query-loader",
+  "version": "0.1.0",
+  "description": "Webpack loader to interpolate file by query value.",
+  "main": "src/loader.js",
+  "repository": "https://github.com/occar421/interpolate-by-query-loader",
+  "author": "MasuqaT <occar@hotmail.co.jp>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.1",
+    "jest": "^23.1.0",
+    "memory-fs": "^0.4.1",
+    "prettier": "^1.13.5",
+    "webpack": "^4.12.0"
+  }
+}
